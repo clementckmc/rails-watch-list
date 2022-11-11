@@ -4,5 +4,8 @@
 
 import { application } from "./application"
 
+import FormFocusController from "./form_focus_controller"
+application.register("form-focus", FormFocusController)
+
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)

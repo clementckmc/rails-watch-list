@@ -1,8 +1,8 @@
-<div class="container mt-3 mb-3">
+<div class="container mt-3 mb-3" data-controller="form-focus">
   <h1><%= @list.name %>
-    <%= link_to new_list_bookmark_path(@list), class:"btn btn-primary" do %>
+    <button class="btn btn-primary" id="focusButton" data-action="click->form-focus#focus">
       <i class="fa-solid fa-plus"></i>
-    <% end %>
+    </button>
   </h1>
   <div class="cards">
     <% @list.bookmarks.each do |bookmark| %>
@@ -21,6 +21,15 @@
     class: "btn btn-danger delete-movie"
   %>
       </div>
+    <% end %>
+  </div>
+  <br>
+  <div class="add-container">
+    <h1>Add a movie to bookmark of <%= @list.name %></h1>
+    <%= simple_form_for([@list, @bookmark]) do |f| %>
+      <%= f.input :comment, id: "form" %>
+      <%= f.association :movie %>
+      <%= f.submit "Add Bookmark", class: "btn btn-primary" %>
     <% end %>
   </div>
   <%= link_to "Back", lists_path, class: "btn btn-secondary" %>
