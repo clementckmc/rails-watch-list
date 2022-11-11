@@ -26,5 +26,10 @@
           </div>
         <% end %>
       <% end %>
+      <%= link_to new_list_path do %>
+        <div class="card card-plus" style="background-image: url('<%= asset_path('plus.jpg') %>')">
+          <h3 class="title title-plus">Add a new list</h3>
+        </div>
+      <% end %>
     </div>
   </div>

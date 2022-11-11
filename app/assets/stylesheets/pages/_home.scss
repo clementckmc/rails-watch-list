@@ -121,6 +121,17 @@ body {
   top: 15px;
 }
 
+.title-plus {
+  opacity: 0;
+}
+
+.card-plus:hover {
+  .title-plus {
+    opacity: 1;
+    transition: 0.5s;
+  }
+}
+
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
   .list-container {
