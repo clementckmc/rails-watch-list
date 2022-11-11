@@ -1,6 +1,5 @@
 .card-category {
   background-size: cover;
-  background-position: center;
   height: 500px;
   display: flex;
   justify-content: center;
@@ -19,6 +18,24 @@
   grid-gap: 16px;
   margin-top: 16px;
   margin-bottom: 16px;
+}
+
+.card-details {
+  opacity: 0;
+  cursor: default;
+}
+
+.card-category:hover {
+  opacity: 0.5;
+  .card-details {
+    opacity: 1;
+    transition: 0.5s;
+  }
+}
+
+.delete-movie {
+  position: absolute;
+  top: 146px;
 }
 
 // Smallest device
