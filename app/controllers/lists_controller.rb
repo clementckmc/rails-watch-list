@@ -1,6 +1,7 @@
 class ListsController < ApplicationController
   def index
     @lists = List.all
+    @recommend = Bookmark.where(list_id: 12)
   end
 
   def show
