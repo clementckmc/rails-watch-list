@@ -1,10 +1,10 @@
 # 🎥 Watch List
 
-Project description goes here
+A 3-model app which allows user to save their favorite movie list.
 
-_DROP SCREENSHOT HERE_
+<img width="1440" alt="Screen Shot 2022-12-08 at 23 56 54" src="https://user-images.githubusercontent.com/46878585/206479241-6900ec6e-ce15-4d78-9055-1321acd4f30c.png">
 <br>
-App home: https://WHATEVER.herokuapp.com
+App home: https://clementckmc-rails-watch-list.herokuapp.com/
    
 ## Getting Started
 ### Setup
